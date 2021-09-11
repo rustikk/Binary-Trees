@@ -1,0 +1,11 @@
+Inorder traversal: go left first, then check node, then go right
+Useful to get an ordered list or for printing the tree
+
+
+Preorder traversal: check node first, then go left, then check node
+Useful for saving the the tree so it can be reconstructed later
+
+
+Postorder traversal: go left first, then go right, then check node
+Useful for deleting the tree
+

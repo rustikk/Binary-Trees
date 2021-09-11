@@ -1,0 +1,28 @@
+Adding 5 to a binary tree:
+     14
+    9    22
+     13      34
+
+#the first property is the value you're trying to add
+new_node = Node(value=5, left=None, right=None)
+current_node = self.head
+while current_node:
+    if new_node.value == current_node.value:
+            raise ValueError("A Node with that value already exists")
+
+    elif new_node.value < current_node.value:
+        #if there's a left node move to the left if the new_node is less than the current_node
+        if current_node.left:
+            current_node = current_node.left
+        #if the left node doesn't exist add the new_node
+        else:
+            current_node.left = new_node
+            #when the new node is set break the while loop
+            break
+    
+    elif new_node.value > current_node.value:
+        #if a node to right of current mode exists move right
+        if current_node.right:
+            current_node = current_node.right
+        else:
+            current_node.right = new_node

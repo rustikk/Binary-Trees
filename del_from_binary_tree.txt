@@ -1,0 +1,42 @@
+if a node has no children then set the parent to not point to it to delete it.
+
+if a node has one children you make the parent of the node you want to delete point to the child
+
+
+To delete a node with 2 children it becomes more difficult
+	    6
+	  5   9
+	 3   7  12
+	    8	  11
+	    
+	    r = replace value when deleting 9
+	    6
+	  5    r11
+	 3   7    12
+	      8 11
+ 
+ 	    6
+	  5    r8
+	 3   7    12
+	      8 11
+	      
+	      
+When in the left most branch pick the rightmost node and
+When in the right most branch pick the leftmost node
+
+replaced
+ 	    6
+	 5     8
+	3   7    12
+	       11
+	       
+	       
+	    6
+	  5    11
+	3    7   12
+	      8 
+ 
+	       
+
+	
+	       
